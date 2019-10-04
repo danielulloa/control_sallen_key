@@ -1,0 +1,24 @@
+Circuit: * C:\Users\Dani\Desktop\cuarto\EE005_CONT\laboratorios\control_sallen_key\lazo_cerrado\lazo_sk_step.asc
+
+Laplace(E1): Window=4ms Nfft=32768
+Per .tran options, skipping operating point for transient analysis.
+Ignoring empty pin current: Ix(u6:en)
+
+Date: Wed Sep 18 19:50:04 2019
+Total elapsed time: 4.783 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 33058
+traniter = 33058
+tranpoints = 16526
+accept = 16482
+rejected = 44
+matrix size = 154
+fillins = 303
+solver = Normal
+Thread vector: 35.7/16.3[3] 5.7/3.6[3] 6.3/2.8[3] 1.5/2.0[1]  2592/500
+Matrix Compiler1: 24.03 KB object code size  8.2/4.9/[2.3]
+Matrix Compiler2: 18.49 KB object code size  3.8/4.4/[1.5]
+

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     37817,        844]
-NotebookOptionsPosition[     36478,        793]
-NotebookOutlinePosition[     36858,        809]
-CellTagsIndexPosition[     36815,        806]
+NotebookDataLength[     88294,       2012]
+NotebookOptionsPosition[     85293,       1904]
+NotebookOutlinePosition[     85673,       1920]
+CellTagsIndexPosition[     85630,       1917]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -371,7 +371,8 @@ Cell[BoxData[
       RowBox[{"C1", " ", "C2", " ", "R1", " ", "R2", " ", 
        SuperscriptBox["s", "2"]}]}]], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.7772928481273823`*^9, 3.7772928636019483`*^9}, 
-   3.77729346029953*^9, 3.777298481168188*^9}]
+   3.77729346029953*^9, 3.777298481168188*^9, 3.7777240079552975`*^9, 
+   3.777808153017623*^9, 3.7778093798232374`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -396,7 +397,8 @@ Cell[BoxData[
    RowBox[{"C1", " ", "C2", " ", "R1", " ", "R2", " ", 
     SuperscriptBox["s", "2"]}]}]]], "Output",
  CellChangeTimes->{{3.7772929632325354`*^9, 3.7772929740938354`*^9}, 
-   3.777293460348358*^9, 3.7772984812199497`*^9}]
+   3.777293460348358*^9, 3.7772984812199497`*^9, 3.777724008011936*^9, 
+   3.777808156758827*^9, 3.777809379871089*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -416,7 +418,8 @@ Cell[BoxData[
    RowBox[{"C1", " ", "C2", " ", "R1", " ", "R2", " ", 
     SuperscriptBox["s", "2"]}]}]]], "Output",
  CellChangeTimes->{3.7772930054277315`*^9, 3.777293101433326*^9, 
-  3.7772932791056886`*^9, 3.7772934603747225`*^9, 3.7772984812492433`*^9}]
+  3.7772932791056886`*^9, 3.7772934603747225`*^9, 3.7772984812492433`*^9, 
+  3.7777240080422125`*^9, 3.7778081571064863`*^9, 3.7778093798984337`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -509,7 +512,8 @@ $CellContext`R1 $CellContext`R2 $CellContext`s^2}, $CellContext`s],
   3.777293209953532*^9, 3.777293281618377*^9, 3.7772934605602713`*^9, {
    3.777293706075226*^9, 3.777293725399394*^9}, 3.7772961078911858`*^9, {
    3.777296302876049*^9, 3.777296344408166*^9}, 3.777296377209839*^9, 
-   3.7772984814982667`*^9}]
+   3.7772984814982667`*^9, 3.7777240083556843`*^9, 3.777808157371132*^9, 
+   3.777809380116206*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -563,7 +567,8 @@ Cell[BoxData[
   3.777293223951542*^9, 3.7772932839650493`*^9, 3.777293460672575*^9, {
    3.777293648466981*^9, 3.7772936569864893`*^9}, {3.777293708033228*^9, 
    3.777293730484341*^9}, 3.7772961099751673`*^9, 3.7772963054053392`*^9, 
-   3.777296378839717*^9, 3.7772984815881104`*^9}]
+   3.777296378839717*^9, 3.7772984815881104`*^9, 3.7777240084445505`*^9, 
+   3.7778081574785566`*^9, 3.777809380183589*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -576,16 +581,21 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"C2", "\[Rule]", "C1"}], ",", 
-     RowBox[{"R2", "\[Rule]", 
-      RowBox[{"2", "*", "R1"}]}]}], "}"}]}]}]], "Input",
- CellChangeTimes->{{3.7772963887625494`*^9, 3.7772964083357353`*^9}}],
+     RowBox[{"R2", "\[Rule]", " ", 
+      RowBox[{
+       FractionBox["1", "2"], "R1"}]}]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.7772963887625494`*^9, 3.7772964083357353`*^9}, {
+  3.7777242012266293`*^9, 3.777724203065978*^9}, {3.7777245283066216`*^9, 
+  3.7777245938903265`*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
   TemplateBox[{FractionBox["1", 
      RowBox[{"1", "+", 
-       RowBox[{"3", " ", "C1", " ", "R1", " ", "s"}], "+", 
-       RowBox[{"2", " ", 
+       FractionBox[
+        RowBox[{"3", " ", "C1", " ", "R1", " ", "s"}], "2"], "+", 
+       RowBox[{
+         FractionBox["1", "2"], " ", 
          SuperscriptBox["C1", "2"], " ", 
          SuperscriptBox["R1", "2"], " ", 
          SuperscriptBox["s", "2"]}]}]],InterpretationBox[
@@ -594,14 +604,16 @@ Cell[BoxData[
      False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
       Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
       TransferFunctionModel[{{{1}}, 1 + 
-        3 $CellContext`C1 $CellContext`R1 $CellContext`s + 
-        2 $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, \
+        Rational[3, 2] $CellContext`C1 $CellContext`R1 $CellContext`s + 
+        Rational[
+          1, 2] $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, \
 $CellContext`s], AutoDelete -> True, Editable -> True, BaseStyle -> 
       "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
      Control`CountStates[
       TransferFunctionModel[{{{1}}, 1 + 
-        3 $CellContext`C1 $CellContext`R1 $CellContext`s + 
-        2 $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, \
+        Rational[3, 2] $CellContext`C1 $CellContext`R1 $CellContext`s + 
+        Rational[
+          1, 2] $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, \
 $CellContext`s]], 1, {}, {False, False}, False, Automatic, None, 
      Automatic},{}},
    "TransferFunctionModelFull",
@@ -647,74 +659,39 @@ $CellContext`s]], 1, {}, {False, False}, False, Automatic, None,
       RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
    Tooltip->TransferFunctionModel],
   TransferFunctionModel[{{{1}}, 1 + 
-    3 $CellContext`C1 $CellContext`R1 $CellContext`s + 
-    2 $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, $CellContext`s],
+    Rational[3, 2] $CellContext`C1 $CellContext`R1 $CellContext`s + 
+    Rational[1, 
+       2] $CellContext`C1^2 $CellContext`R1^2 $CellContext`s^2}, \
+$CellContext`s],
   AutoDelete->True,
   BaseStyle->"TransferFunctionModelMinimal",
   Editable->True]], "Output",
  CellChangeTimes->{{3.777296398963688*^9, 3.77729640910331*^9}, 
-   3.777298481753151*^9}]
+   3.777298481753151*^9, 3.777724008604707*^9, 3.7777242060234776`*^9, 
+   3.7777245945807467`*^9, 3.7778081576103907`*^9, 3.777809380321285*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"TransferFunctionPoles", "[", 
-   RowBox[{"Hs", "[", "s", "]"}], "]"}], "/.", 
-  RowBox[{"C1", "\[Rule]", 
-   RowBox[{"10", "*", 
-    RowBox[{"10", "^", 
-     RowBox[{"-", "9"}]}]}]}]}]], "Input",
- CellChangeTimes->{{3.77729641458865*^9, 3.777296448909848*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"{", 
+  RowBox[{"planta", "[", "s", "]"}], "=", 
+  RowBox[{
+   RowBox[{"Hs", "[", "s", "]"}], "/.", 
    RowBox[{"{", 
     RowBox[{
-     RowBox[{"-", 
-      FractionBox["100000000", "R1"]}], ",", 
-     RowBox[{"-", 
-      FractionBox["50000000", "R1"]}]}], "}"}], "}"}], "}"}]], "Output",
- CellChangeTimes->{{3.7772964283923197`*^9, 3.7772964494860163`*^9}, 
-   3.777298481825419*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  FractionBox["1", 
-   RowBox[{"2", "*", "Pi", "*", "5000", "*", "12", "*", 
-    RowBox[{"10", "^", 
-     RowBox[{"-", "9"}]}]}]], "//", "N"}]], "Input",
- CellChangeTimes->{{3.777297322646923*^9, 3.7772973420394497`*^9}, {
-  3.777297546664958*^9, 3.7772975614491043`*^9}}],
-
-Cell[BoxData["2652.5823848649225`"], "Output",
- CellChangeTimes->{{3.777297338511135*^9, 3.7772973431341715`*^9}, {
-   3.777297547140542*^9, 3.7772975619071093`*^9}, 3.777298481865453*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Hs", "[", "s", "]"}], "/.", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"C1", "\[Rule]", 
-     RowBox[{"10", "*", 
-      RowBox[{"10", "^", 
-       RowBox[{"-", "9"}]}]}]}], ",", 
-    RowBox[{"R1", "\[Rule]", 
-     FractionBox["1", 
-      RowBox[{"2", "*", "Pi", "*", "10000", "*", "10", "*", 
+     RowBox[{"C1", "\[Rule]", 
+      RowBox[{"10", "*", 
        RowBox[{"10", "^", 
-        RowBox[{"-", "9"}]}]}]]}]}], "}"}]}]], "Input",
+        RowBox[{"-", "9"}]}]}]}], ",", 
+     RowBox[{"R1", "\[Rule]", 
+      FractionBox["1", 
+       RowBox[{"2", "*", "Pi", "*", "1000", "*", "10", "*", 
+        RowBox[{"10", "^", 
+         RowBox[{"-", "9"}]}]}]]}]}], "}"}]}]}]], "Input",
  CellChangeTimes->{{3.77729740598559*^9, 3.7772974547432947`*^9}, {
-  3.7772975428485594`*^9, 3.777297569943224*^9}}],
+   3.7772975428485594`*^9, 3.777297569943224*^9}, 3.7777240970358157`*^9, {
+   3.7777246282666492`*^9, 3.7777246366259947`*^9}}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -722,24 +699,24 @@ Cell[BoxData[
      RowBox[{"1", "+", 
        FractionBox[
         RowBox[{"3", " ", "s"}], 
-        RowBox[{"20000", " ", "\[Pi]"}]], "+", 
+        RowBox[{"4000", " ", "\[Pi]"}]], "+", 
        FractionBox[
         SuperscriptBox["s", "2"], 
-        RowBox[{"200000000", " ", 
+        RowBox[{"8000000", " ", 
           SuperscriptBox["\[Pi]", "2"]}]]}]],InterpretationBox[
     "\[InvisibleSpace]", None],{
     TransferFunctionModel, {
      False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
       Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
       TransferFunctionModel[{{{1}}, 1 + 
-        Rational[3, 20000] Pi^(-1) $CellContext`s + 
-        Rational[1, 200000000] Pi^(-2) $CellContext`s^2}, $CellContext`s], 
+        Rational[3, 4000] Pi^(-1) $CellContext`s + 
+        Rational[1, 8000000] Pi^(-2) $CellContext`s^2}, $CellContext`s], 
       AutoDelete -> True, Editable -> True, BaseStyle -> 
       "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
      Control`CountStates[
       TransferFunctionModel[{{{1}}, 1 + 
-        Rational[3, 20000] Pi^(-1) $CellContext`s + 
-        Rational[1, 200000000] Pi^(-2) $CellContext`s^2}, $CellContext`s]], 
+        Rational[3, 4000] Pi^(-1) $CellContext`s + 
+        Rational[1, 8000000] Pi^(-2) $CellContext`s^2}, $CellContext`s]], 
      1, {}, {False, False}, False, Automatic, None, Automatic},{}},
    "TransferFunctionModelFull",
    BaseStyle->{NumberMarks -> False},
@@ -783,12 +760,1146 @@ Cell[BoxData[
        "SamplingPeriod", "->", 
       RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
    Tooltip->TransferFunctionModel],
-  TransferFunctionModel[{{{1}}, 1 + Rational[3, 20000] Pi^(-1) $CellContext`s + 
-    Rational[1, 200000000] Pi^(-2) $CellContext`s^2}, $CellContext`s],
+  TransferFunctionModel[{{{1}}, 1 + Rational[3, 4000] Pi^(-1) $CellContext`s + 
+    Rational[1, 8000000] Pi^(-2) $CellContext`s^2}, $CellContext`s],
   AutoDelete->True,
   BaseStyle->"TransferFunctionModelMinimal",
   Editable->True]], "Output",
- CellChangeTimes->{{3.7772984684104095`*^9, 3.777298481987523*^9}}]
+ CellChangeTimes->{{3.7772984684104095`*^9, 3.777298481987523*^9}, 
+   3.7777240088390803`*^9, 3.777724100208638*^9, 3.777724218449194*^9, 
+   3.7777246042027793`*^9, 3.777724637360362*^9, 3.7778081577920303`*^9, 
+   3.7778093804785104`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"pplanta", "=", 
+  RowBox[{"TransferFunctionPoles", "[", 
+   RowBox[{"planta", "[", "s", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.777724040053729*^9, 3.777724054092705*^9}, 
+   3.7777241050587096`*^9, {3.77772464287792*^9, 3.777724646619117*^9}, {
+   3.777725292540354*^9, 3.7777253000217667`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "4000"}], " ", "\[Pi]"}], ",", 
+     RowBox[{
+      RowBox[{"-", "2000"}], " ", "\[Pi]"}]}], "}"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.777724054604422*^9, 3.7777241052852697`*^9, 3.7777242201161737`*^9, 
+   3.777724606158827*^9, {3.777724643758774*^9, 3.7777246471737995`*^9}, 
+   3.7777253005998926`*^9, 3.7778081580371456`*^9, 3.777809380598625*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p1", "=", 
+  RowBox[{"Extract", "[", 
+   RowBox[{"pplanta", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "2"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7777253850503397`*^9, 3.7777253855952682`*^9}, 
+   3.777725629211315*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "2000"}], " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{3.7777253899448605`*^9, 3.777725631124395*^9, 
+  3.7778081580644913`*^9, 3.7778093806269484`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"p2", "=", 
+  RowBox[{"Extract", "[", 
+   RowBox[{"pplanta", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.777725394234889*^9, 3.7777253976757965`*^9}, 
+   3.7777256300257635`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "4000"}], " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{3.777725398020516*^9, 3.7777256329730253`*^9, 
+  3.777808158090858*^9, 3.777809380653315*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ganancia", "[", "s", "]"}], "=", 
+  RowBox[{"TransferFunctionModel", "[", "k", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7777269488955374`*^9, 3.7777269580849743`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "k",InterpretationBox["\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{$CellContext`k}}, 1}, \[FormalS]], AutoDelete -> 
+      True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , \[FormalS], 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{$CellContext`k}}, 1}, \[FormalS]]], 1, {}, {
+     False, False}, False, Automatic, None, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", 
+      "\[FormalS]", ",", "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{$CellContext`k}}, 1}, \[FormalS]],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{3.777726959351574*^9, 3.7778081586875377`*^9, 
+  3.7778093807626925`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"int", "[", "s", "]"}], "=", 
+  RowBox[{"TransferFunctionModel", "[", 
+   RowBox[{
+    FractionBox["R3i", 
+     RowBox[{"R1i", "*", "R2i", "*", "C1i", "*", "s"}]], ",", "s"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7777246820838223`*^9, 3.77772469107695*^9}, {
+  3.7777250550058904`*^9, 3.77772509283634*^9}, {3.7777257438780227`*^9, 
+  3.7777257487808423`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{FractionBox["R3i", 
+     RowBox[{"C1i", " ", "R1i", " ", "R2i", " ", "s"}]],InterpretationBox[
+    "\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{$CellContext`R3i}}, $CellContext`C1i \
+$CellContext`R1i $CellContext`R2i $CellContext`s}, $CellContext`s], 
+      AutoDelete -> True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{$CellContext`R3i}}, $CellContext`C1i \
+$CellContext`R1i $CellContext`R2i $CellContext`s}, $CellContext`s]], 1, {}, {
+     False, False}, False, Automatic, None, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", "s", ",",
+       "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{$CellContext`R3i}}, $CellContext`C1i \
+$CellContext`R1i $CellContext`R2i $CellContext`s}, $CellContext`s],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{{3.7777246683416853`*^9, 3.777724691580853*^9}, {
+   3.7777250641914062`*^9, 3.7777250933661213`*^9}, 3.7777258016508307`*^9, 
+   3.777808158885779*^9, 3.7778093810732365`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"int", "[", "s", "]"}], "=", 
+   RowBox[{"Cancel", "[", 
+    RowBox[{
+     RowBox[{"int", "[", "s", "]"}], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"R3i", "\[Rule]", 
+        RowBox[{"100", "*", 
+         RowBox[{"10", "^", "3"}]}]}], ",", 
+       RowBox[{"R2i", "\[Rule]", 
+        RowBox[{"100", "*", 
+         RowBox[{"10", "^", "3"}]}]}], ",", 
+       RowBox[{"R1i", "\[Rule]", 
+        RowBox[{"100", "*", 
+         RowBox[{"10", "^", "3"}]}]}], ",", 
+       RowBox[{"C1i", "\[Rule]", " ", 
+        RowBox[{"1", "*", 
+         RowBox[{"10", "^", 
+          RowBox[{"-", "9"}]}]}]}]}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7777250684843655`*^9, 3.7777251011942244`*^9}, {
+  3.7777257541646194`*^9, 3.777725807885193*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   FractionBox["10000", "s"],InterpretationBox["\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{100000}}, 10 $CellContext`s}, $CellContext`s], 
+      AutoDelete -> True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{100000}}, 10 $CellContext`s}, $CellContext`s]],
+      1, {}, {False, False}, False, Automatic, None, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", "s", ",",
+       "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{100000}}, 10 $CellContext`s}, $CellContext`s],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{{3.77772467418053*^9, 3.7777246939148273`*^9}, {
+   3.777725080252392*^9, 3.777725102182501*^9}, {3.7777257785219803`*^9, 
+   3.7777258086937823`*^9}, 3.7778081591689825`*^9, 3.777809381208002*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"comp", "[", "s", "]"}], "=", 
+  RowBox[{"TransferFunctionModel", "[", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"s", "-", 
+      RowBox[{"(", 
+       RowBox[{"p1", "-", 
+        RowBox[{"p1", "*", 
+         RowBox[{"Tan", "[", 
+          RowBox[{"22.5", "*", 
+           FractionBox["Pi", "180"]}], "]"}]}]}], ")"}]}], 
+     RowBox[{"s", "-", 
+      RowBox[{"(", 
+       RowBox[{"p1", "+", 
+        RowBox[{"p1", "*", 
+         RowBox[{"Tan", "[", 
+          RowBox[{"67.5", "*", 
+           FractionBox["Pi", "180"]}], "]"}]}]}], ")"}]}]], ",", "s"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7777252394003596`*^9, 3.7777252686995974`*^9}, {
+  3.7777254169472275`*^9, 3.777725530426903*^9}, {3.777725665137494*^9, 
+  3.7777256786784754`*^9}, {3.7778093202520237`*^9, 3.7778093211153045`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{FractionBox[
+     RowBox[{
+       RowBox[{"3680.6047380424397`", "\[VeryThinSpace]"}], "+", "s"}], 
+     RowBox[{
+       RowBox[{"21452.136490675904`", "\[VeryThinSpace]"}], "+", "s"}]],
+    InterpretationBox["\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{3680.6047380424397` + $CellContext`s}}, 
+        21452.136490675904` + $CellContext`s}, $CellContext`s], AutoDelete -> 
+      True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{3680.6047380424397` + $CellContext`s}}, 
+        21452.136490675904` + $CellContext`s}, $CellContext`s]], 1, {}, {
+     False, False}, False, Automatic, None, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", "s", ",",
+       "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", "None", "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{3680.6047380424397` + $CellContext`s}}, 
+    21452.136490675904` + $CellContext`s}, $CellContext`s],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{3.7778093214629593`*^9, 3.777809381419915*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sys", "[", "s", "]"}], "=", 
+  RowBox[{"SystemsModelSeriesConnect", "[", 
+   RowBox[{
+    RowBox[{"SystemsModelSeriesConnect", "[", 
+     RowBox[{
+      RowBox[{"planta", "[", "s", "]"}], ",", 
+      RowBox[{"comp", "[", "s", "]"}]}], "]"}], ",", 
+    RowBox[{"int", "[", "s", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.777809423073185*^9, 3.7778095139383144`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{FractionBox[
+     RowBox[{"10000", " ", 
+       RowBox[{"(", 
+         RowBox[{
+           RowBox[{"114121.84885856631`", "\[VeryThinSpace]"}], "+", 
+           RowBox[{"31.006276680299816`", " ", "s"}]}], ")"}]}], 
+     RowBox[{"s", " ", 
+       RowBox[{"(", 
+         RowBox[{
+           RowBox[{"665150.879413453`", "\[VeryThinSpace]"}], "+", 
+           RowBox[{"189.7993522211582`", " ", "s"}], "+", 
+           RowBox[{"0.01582643760118114`", " ", 
+             SuperscriptBox["s", "2"]}], "+", 
+           RowBox[{"3.926990816987241`*^-7", " ", 
+             SuperscriptBox["s", "3"]}]}], ")"}]}]],InterpretationBox[
+    "\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{
+         100000 (114121.84885856631` + 
+           31.006276680299816` $CellContext`s)}}, {{
+         10 $CellContext`s (665150.879413453 + 
+           189.7993522211582 $CellContext`s + 
+           0.01582643760118114 $CellContext`s^2 + 
+           3.926990816987241*^-7 $CellContext`s^3)}}}, $CellContext`s, 
+       SystemsModelLabels -> {{None}, {None}}, SamplingPeriod -> Automatic], 
+      AutoDelete -> True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{
+         100000 (114121.84885856631` + 
+           31.006276680299816` $CellContext`s)}}, {{
+         10 $CellContext`s (665150.879413453 + 
+           189.7993522211582 $CellContext`s + 
+           0.01582643760118114 $CellContext`s^2 + 
+           3.926990816987241*^-7 $CellContext`s^3)}}}, $CellContext`s, 
+       SystemsModelLabels -> {{None}, {None}}, SamplingPeriod -> Automatic]], 
+     1, {}, {False, False}, False, Automatic, {{None}, {None}}, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", "s", ",",
+       "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", 
+      RowBox[{"{", 
+        RowBox[{
+          RowBox[{"{", "None", "}"}], ",", 
+          RowBox[{"{", "None", "}"}]}], "}"}], "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{
+     100000 (114121.84885856631` + 31.006276680299816` $CellContext`s)}}, {{
+     10 $CellContext`s (665150.879413453 + 189.7993522211582 $CellContext`s + 
+       0.01582643760118114 $CellContext`s^2 + 
+       3.926990816987241*^-7 $CellContext`s^3)}}}, $CellContext`s, 
+   SystemsModelLabels -> {{None}, {None}}, SamplingPeriod -> Automatic],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{{3.7778094931150947`*^9, 3.777809514435381*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TransferFunctionPoles", "[", 
+  RowBox[{"sys", "[", "s", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.777809516966632*^9, 3.777809524993966*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "21452.13649067592`"}], ",", 
+     RowBox[{"-", "12566.370614359153`"}], ",", 
+     RowBox[{"-", "6283.185307179592`"}], ",", "0"}], "}"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.777809525534979*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SystemsModelFeedbackConnect", "[", 
+  RowBox[{"sys", "[", "s", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7778095401453137`*^9, 3.7778095562654133`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{FractionBox[
+     RowBox[{"5.02407626824553`*^35", " ", 
+       RowBox[{"(", 
+         RowBox[{
+           RowBox[{"3680.6047380424397`", "\[VeryThinSpace]"}], "+", 
+           RowBox[{"1.`", " ", "s"}]}], ")"}]}], 
+     RowBox[{
+       RowBox[{"5.02407626824553`*^35", " ", 
+         RowBox[{"(", 
+           RowBox[{
+             RowBox[{"3680.6047380424397`", "\[VeryThinSpace]"}], "+", 
+             RowBox[{"1.`", " ", "s"}]}], ")"}]}], "+", 
+       RowBox[{"s", " ", 
+         RowBox[{"(", 
+           RowBox[{"1.0777716984596876`*^36", "+", 
+             RowBox[{"3.0753980268406576`*^32", " ", "s"}], "+", 
+             RowBox[{"2.564423661144793`*^28", " ", 
+               SuperscriptBox["s", "2"]}], "+", 
+             RowBox[{"6.363066927600206`*^23", " ", 
+               SuperscriptBox["s", "3"]}]}], ")"}]}]}]],InterpretationBox[
+    "\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{
+         5.02407626824553*^35 (3680.6047380424397` + 1. $CellContext`s)}}, {{
+         5.02407626824553*^35 (3680.6047380424397` + 
+            1. $CellContext`s) + $CellContext`s (1.0777716984596876`*^36 + 
+            3.0753980268406576`*^32 $CellContext`s + 
+            2.564423661144793*^28 $CellContext`s^2 + 
+            6.363066927600206*^23 $CellContext`s^3)}}}, $CellContext`s, 
+       SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}], 
+      AutoDelete -> True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , $CellContext`s, 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{
+         5.02407626824553*^35 (3680.6047380424397` + 1. $CellContext`s)}}, {{
+         5.02407626824553*^35 (3680.6047380424397` + 
+            1. $CellContext`s) + $CellContext`s (1.0777716984596876`*^36 + 
+            3.0753980268406576`*^32 $CellContext`s + 
+            2.564423661144793*^28 $CellContext`s^2 + 
+            6.363066927600206*^23 $CellContext`s^3)}}}, $CellContext`s, 
+       SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}]], 
+     1, {}, {False, False}, False, Automatic, {{None}, {None}}, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", "s", ",",
+       "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", 
+      RowBox[{"{", 
+        RowBox[{
+          RowBox[{"{", "None", "}"}], ",", 
+          RowBox[{"{", "None", "}"}]}], "}"}], "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{
+     5.02407626824553*^35 (3680.6047380424397` + 1. $CellContext`s)}}, {{
+     5.02407626824553*^35 (3680.6047380424397` + 
+        1. $CellContext`s) + $CellContext`s (1.0777716984596876`*^36 + 
+        3.0753980268406576`*^32 $CellContext`s + 
+        2.564423661144793*^28 $CellContext`s^2 + 
+        6.363066927600206*^23 $CellContext`s^3)}}}, $CellContext`s, 
+   SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{3.777809556955842*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SystemsModelFeedbackConnect", "[", 
+  RowBox[{"SystemsModelSeriesConnect", "[", 
+   RowBox[{
+    RowBox[{"sys", "[", "s", "]"}], ",", 
+    RowBox[{"ganancia", "[", "s", "]"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.777809570714616*^9, {3.7778097103082047`*^9, 3.777809745618714*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{FractionBox[
+     RowBox[{
+       RowBox[{"1.279501833017914`*^40", " ", "k"}], "+", 
+       RowBox[{"3.47633588522311`*^36", " ", "k", " ", "\[FormalS]"}]}], 
+     RowBox[{
+       RowBox[{"1.279501833017914`*^40", " ", "k"}], "+", 
+       RowBox[{"7.45748318972408`*^36", " ", "\[FormalS]"}], "+", 
+       RowBox[{"3.47633588522311`*^36", " ", "k", " ", "\[FormalS]"}], "+", 
+       RowBox[{"2.127976557526264`*^33", " ", 
+         SuperscriptBox["\[FormalS]", "2"]}], "+", 
+       RowBox[{"1.7744153396910973`*^29", " ", 
+         SuperscriptBox["\[FormalS]", "3"]}], "+", 
+       RowBox[{"4.4028308328642453`*^24", " ", 
+         SuperscriptBox["\[FormalS]", "4"]}]}]],InterpretationBox[
+    "\[InvisibleSpace]", None],{
+    TransferFunctionModel, {
+     False, False, {False, False}}, $Failed, {{Control`CommonDump`$DUMMY$}, {
+      Control`CommonDump`$DUMMY$}}, InterpretationBox[#, 
+      TransferFunctionModel[{{{
+         1.279501833017914*^40 $CellContext`k + 
+          3.47633588522311*^36 \[FormalS] $CellContext`k}}, {{
+         7.45748318972408*^36 \[FormalS] + 2.127976557526264*^33 \[FormalS]^2 + 
+          1.7744153396910973`*^29 \[FormalS]^3 + 
+          4.4028308328642453`*^24 \[FormalS]^4 + 
+          1.279501833017914*^40 $CellContext`k + 
+          3.47633588522311*^36 \[FormalS] $CellContext`k}}}, \[FormalS], 
+       SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}], 
+      AutoDelete -> True, Editable -> True, BaseStyle -> 
+      "TransferFunctionModelMinimal"]& , \[FormalS], 1, 1, 
+     Control`CountStates[
+      TransferFunctionModel[{{{
+         1.279501833017914*^40 $CellContext`k + 
+          3.47633588522311*^36 \[FormalS] $CellContext`k}}, {{
+         7.45748318972408*^36 \[FormalS] + 2.127976557526264*^33 \[FormalS]^2 + 
+          1.7744153396910973`*^29 \[FormalS]^3 + 
+          4.4028308328642453`*^24 \[FormalS]^4 + 
+          1.279501833017914*^40 $CellContext`k + 
+          3.47633588522311*^36 \[FormalS] $CellContext`k}}}, \[FormalS], 
+       SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}]], 
+     1, {}, {False, False}, False, Automatic, {{None}, {None}}, Automatic},{}},
+   "TransferFunctionModelFull",
+   BaseStyle->{NumberMarks -> False},
+   DisplayFunction->(TagBox[
+     SubsuperscriptBox[
+      RowBox[{"(", 
+        GridBox[{{#}}, AllowedDimensions -> {1, 1}, AutoDelete -> False, 
+         AllowScriptLevelChange -> False, ColumnAlignments -> {Center}, 
+         BaseStyle -> {Deployed -> False}, GridBoxItemStyle -> {}, 
+         GridBoxDividers -> {
+          "Rows" -> {False, {False}, False}, 
+           "Columns" -> {False, {False}, False}}, 
+         GridBoxBackground -> {"Rows" -> {{
+              GrayLevel[1], 
+              RGBColor[0.8, 0.9, 0.9]}}}], ")"}], #2, 
+      ButtonBox[
+       GraphicsBox[{
+         RGBColor[0.8, 0.85, 0.85], 
+         EdgeForm[
+          RGBColor[0.6, 0.7, 0.7]], 
+         RectangleBox[{0, 0}, RoundingRadius -> Offset[2.5]], 
+         InsetBox[
+          StyleBox[
+          "\[ScriptCapitalT]", Control`NonlinearModelsDump`LineColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`FrontFaceColor -> 
+           GrayLevel[0], Control`NonlinearModelsDump`BackFaceColor -> 
+           GrayLevel[0], GraphicsColor -> GrayLevel[0], FontSize -> 12, 
+           FontColor -> GrayLevel[0]], {0.5, 0.5}]}, ImageSize -> 20], 
+       ButtonFunction :> Control`Typesetting`SystemsModelTypesetToggle[
+         ButtonNotebook[], FE`CMObj], Evaluator -> Automatic, Appearance -> 
+       None], MultilineFunction -> None], 
+     EventHandlerTag[{"MouseEntered" :> {FE`CMObj = MathLink`CallFrontEnd[
+           FrontEnd`Value[
+            FEPrivate`Self[]]]}, PassEventsDown -> True, PassEventsUp -> 
+       True}]]& ),
+   InterpretationFunction->(
+    RowBox[{"TransferFunctionModel", "[", "Unevaluated", "[", 
+      RowBox[{"{", 
+        RowBox[{"{", 
+          TemplateSlotSequence[{1, 1}, ","], "}"}], "}"}], "]", ",", 
+      "\[FormalS]", ",", "SamplingPeriod", "->", 
+      RowBox[{#2}], ",", "SystemsModelLabels", "->", 
+      RowBox[{"{", 
+        RowBox[{
+          RowBox[{"{", "None", "}"}], ",", 
+          RowBox[{"{", "None", "}"}]}], "}"}], "]"}]& ),
+   Tooltip->TransferFunctionModel],
+  TransferFunctionModel[{{{
+     1.279501833017914*^40 $CellContext`k + 
+      3.47633588522311*^36 \[FormalS] $CellContext`k}}, {{
+     7.45748318972408*^36 \[FormalS] + 2.127976557526264*^33 \[FormalS]^2 + 
+      1.7744153396910973`*^29 \[FormalS]^3 + 
+      4.4028308328642453`*^24 \[FormalS]^4 + 
+      1.279501833017914*^40 $CellContext`k + 
+      3.47633588522311*^36 \[FormalS] $CellContext`k}}}, \[FormalS], 
+   SamplingPeriod -> Automatic, SystemsModelLabels -> {{None}, {None}}],
+  AutoDelete->True,
+  BaseStyle->"TransferFunctionModelMinimal",
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.777809571477311*^9, {3.777809722317958*^9, 3.7778097475718336`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RootLocusPlot", "[", 
+  RowBox[{
+   RowBox[{"SystemsModelFeedbackConnect", "[", 
+    RowBox[{"SystemsModelSeriesConnect", "[", 
+     RowBox[{
+      RowBox[{"sys", "[", "s", "]"}], ",", 
+      RowBox[{"ganancia", "[", "s", "]"}]}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", "0", ",", "1.5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.777809597275135*^9, 3.77780962097921*^9}, {
+   3.777809761101118*^9, 3.777809796748539*^9}, 3.777809995180941*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxNzntIUwEUBvBLOptFPuaWqWRu5lAXosVUQpdkC1OUUrAsmeGjKAONRJfT
+xnyQoZkaLGsJJbOpSwtKR5KW2oI1MV/T6fRWUuaDQcymA0UriH33wOHj98/5
+DjszLzlnB0EQiX/3XyZnxb6lr068J/6Pj48qjvsbHuDILsda4dqBhfSSddhB
+zOcvbcDpL4pXOx0NdrvpfO+bWbBfwvxSQgTMKupmBEng6OWKTbILlhvTTo6s
+wNaHdHKBM2m3s+UXsyYFHnGUD7ZUwoO88SHZa1jCu1eVQcIFoTSpzXnK7gc3
+r307GAavFejnBKlwZ0ldMK8UljIP1aU+gX1mo7qTtHCD2eNp5SJs8p2PENON
+dpe5xAvDg+Hhd6a2xTi4I2D5zoUrcLaMK7peBUczn299UsIFc/G9swMw0eb9
+5SwJy6rW9P02eCqSPTfNnLa7yX/8SH0IrG/fEK6cglOukhHCbFjp7rmWWwKb
+3piMwXKYYfUYG+qAaTUOMsUH+HhA9+b6LBwUIziftgoPb46qBbtn7G5VZPCP
+suGunVJbcThcZtLSwhNhUZQ1jJMJ5xhCDFIxzJ2JjQmshRMbi1a8min3ou5u
+39BQ+jPP5PvrYc0ozcYnYRUxkt9qgU/8ePSsnGbCP4e5oimKD/yscOc5walt
+fbljFM8XGc1+dDhsQsjr3QVrCx9XW1zhem9Fn9ANvkTcMjdSHK2yCI65w9/J
+lpfVDLj8q+qzPwtu1gb2F1IsD5V36ihWKiNL8/bCTqL2pR5PinVNPXv2wepR
+2e2LFGd93M9y8oJdNJOGcxTrksoa1BRrXNkJWxRvSF5tn/aG/wAKFV7d
+       "]]},
+     Annotation[#, "Charting`Private`Tag$17487#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1: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
+vWoDBP4GB7CNDQ==
+       "]]},
+     Annotation[#, "Charting`Private`Tag$17487#2"]& ], 
+    TagBox[
+     {RGBColor[0.560181, 0.691569, 0.194885], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxF0nk01QkbB3DbG0pR3lEUkpQsY4yypydDXo2MiEypLC03lTXZp6sQyS4k
++5I1o3u5rmt7flnLki3crmWKsmRIIaHxes95j99zznOe8znn+8fznPPI2Dub
+X+Lh4uKKWev/zY1xx11UwpjI9f8qHJ5iW0eQPneGFRMYTVqamb/6LoF0Uccm
+yaps0m+0Fz3e1ZAOSN2sIz5P2id427FdjhXrpj/VmBp7zFp3zMb0ATW5qnWb
+f9eViFIiXbQ07rGkRnpRsydoSZ904muz5j/tSMuNNzXcLyBtdObUe5Pe6nVf
+lTnBLzhBOmzc8EDDMulXtzRuHJapWbd1rMS88nXSV1v/4hPmqV23YZp6zLgY
+rjvZVGN0qwzpue8a6jqKpLNstN6EHyHNI6G7R41C+vcXujdt3Eg/8zrcGORH
+2rZPz7E/inRt3FGafwVpMQN9vtw60k5f9K062kg3ZP6S962PtKS5wdKed6Q9
+uA1NTKZIu32r+377I+L8sJAJJ+0yOBbnHjo0iRj6ja/pk5ILNJXa50yOI1ZT
+RTpS37qDbFKfSfoY4tJFJ2+e1VugPj2qaPUB0ejDANWoyhtivZz1hd4jehWq
+dPse8oNjF05HPR9BLFlW3a/u+wdc9Lj9g/faPivTfDulTKjQ4tjUqfIWkcMe
+Pst7PADuR/9nJmUIcWL/uQxZqbuQN2VoZjm4tu/Mvya5Fu+C29aZMaEBxPh3
++00HmgNhj08ny4+N6LLnzOlbFsEwaV788XwP4vPVls9B0qHw65XRf7Z3I9ba
+qBKajaEgwnhr1NmJ2GQSqlJNuQ+T5YSPwStEhtnAAdvMMNglssVO+SWi0rzA
+Wd/pcNBodJceb0YUN00vdvKJgKht9duymhDDj/yjy+GNhN7WmgTxBsTdwfO9
+HfxR0McvuEMQEbeecnL/siEapi8DZ7YM8XyJrHs7JwaMFCinG0oRHx6sfO0l
+HAsnx3S5HtERt2m6pMXqx8JHn+Q+eIZom1DcoJgbC7W9q0kxRYgRunMelo5x
+YJz+1V4vC9FCNjXOk/MQ6uRkXRlr/3KHT2T3Fp9EWJyQPBcZifgs7+c2n4xE
+YL1wcKdEIEaJEbo5zYlwtSNUaucDxLCDCSc0xR7BUcuTN+7cQ3z7su6aZ/Ej
+iMrKG7T+A7E+wDQaepKg7IZQ3N7riNdlmrjfLyVDpxLl4qQjokbULrk0qRSY
+ql1xKLmKSO1ODFXQT4Eqn4BPulcQA71+bSoPSYH7K7261vZr97o+/VAtmgq2
+7PfRCdaIElOm8isyaZDnwyrUNEQ0Tg+vs41Oh5kM/i4uaUST13APLmWCSQZS
++iTX8pw261dumfB4/I188S5EkX4wtaBmgpb28l4bCUTnz4ICOo8zoXiGson1
+A+LkypPjDzoyYdxvU5C/ECLhbTZrrJUFxndDUw3najHUwnsFebNBpSRZrLmw
+FluTlo5YUnPgcsCzMOb+WnQqFugU4skDirO8ztfkGhzhxcshzgUg7/VL8RXp
+Ggy3Us3UpxaBqZP6zGhuNd6MnGPY2RXD+FDInIRCNWpUaUlukSuBO63ikkbM
+KgyYk0qAlRIo3pDzMB+q0Nc5p3iI/Qy6hxoUF9orcfvUZoKSTwMuxcZPSpRK
+fH49eELDgQ4eL2zd5VdYmL5iSzGXKwV+1SzjO0ks7GBL5hv0lIKUja6Y8EEW
+fnUpta0IK4May/aJ+q4KdOsRnT6ozQCND61cb3wqUO60VNGZfgYM7SznC5Kq
+QHrBVnHZ2+XQq/qEl7eFiUVn3+bXiDGhh9KoGOPLxH9fiDuCuUyIPLf78ff9
+TDT1E9qnfbQCdM7+lG0xUI4bmVd8BdsqYPOyk0nNg3JcPDzYxW/HApXlOOYs
+lKOC40jC5DQLwntEd2itMFC4cmPEGZdK6C/h/FZLZ6AQtZ2H9q0SAv2D7390
+ZeCk+Ei9smcVJMvLK/CpMZA92nukZqYKeJXA1f9TGX7J/ilwxrka9Di3gxbo
+ZSjpOTii8L4aEqKJiln3MtwweyG13q4G5IQk2+O1yjDeMmLfcPeaYcgnh7sM
+OVmLKYyjtTDpXckxayxFPSfmUhGjFmJZbJF9UaWYVNZHnRZB6HDpVaNbleK1
+AHvtb8YINm2QTJUuxXMZXlZfqQihjJvmgn/TcSz+mu0lOoLr7ZUYu3I6KkuF
+MQ5MIJjt1XXVC6bjqYHVgXsSBOgV8Bf8bUXHnR7jbsrHCZB0gLQ7e+mYu+XT
+MWF/An50y882XqDhHO2uZVshASd/l+X2n6ehxenvnslFBDS9bLleMkdDqi0+
+uPaUAKp4iuv2LzSMD1MIF/yTgBrRz6ofZmg4rDgwbkAjYHRHaWDwBA1bbKRF
+K5gEXN75ktI1QMNbWTc0ExoIuDZSlsO/Zjd4l3uxkYCiJc9ZXQ4Nu9hDgj83
+ERCifbMsl03D3GrPnNZmAnaFcM/499JwQfq8DncrAZ1ZovuUO2j4YLVw5EoX
+AdN1u39zeEVDlvo9v4PdBAj/yA5+1E7DAmlBAe4eAvp0ju7Z0EbDvGyBr49e
+E2BSnSXw1wsaHmhVPNTST8DNcnwitma+QVeHBDYBw1XuFieaach8fSPQ4Q0B
+hpbR/axGGj4RjUxd5hCgkrFQMttAwyoZZkLTAAGJlLEE+TXrFaTejR0kYEHQ
+LvxCPQ1DogzsLwwRIDtqGx1ft5YvL1RTHCbgv9QcVwA=
+       "]]},
+     Annotation[#, "Charting`Private`Tag$17487#3"]& ], 
+    TagBox[
+     {RGBColor[0.922526, 0.385626, 0.209179], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxdz30s1AEYB3AqYURXhht3XWzFhFF3Ka3aeYnaXcus6GVXCudm4bxlu7Yb
+uUUub2eHc8h5a5eXcr86JsUfLRMpcxma2CpxojtHrPc/PM9vPduzZ589z57t
+uzsmKSJ2k5mZGedv/5v/Fy2zg3OAvfZsw3Sf3p5zbOvnG46y5LhVs6ngLas/
+5zyCPMEdBYUyVvAhcGOiy2u/0HCwro0SUR8eDdZn57KceQJwiJJ7xqU8Fbyc
+vd/U8j4LPDp+8LMwQgzOqhWEpGfmgK3PGy20YxJwa+JH82FGPphyw0JI2SMF
+d6oGZnN8i8Aqahzr8P1i8MsE75T2naVg+jxxM7BUBi7y4U27L5bh/0WiS3pR
+DpaIr3G7HpeDFUy+ZnyhAmzUefXR/BXgSELe6xFZBX7LaDkrEyvB/Uuq5NsV
+1eBm233qkNIasFdQ5xD/ZC2YIAb75N1o77qBTpu998CnnbgpShna6YOuLN+E
+Xl9bvGIfXQcWLREMIYF27ylqo1uqwEzjb63dBfTw5bTN3AZ0u4XINmMOPaIu
+oLT41YNpVM7I02T0jKYkrfEh2uBVNcqcR5sr0q1MjAawni+lJkWhk7ZHz2jz
+0DznoEB5N3pSW3KMriftT72wue7YCP5ULIk/wkaL6kxxnAS0/0Rr8A8p6d7V
+0OSgQfdOp87QdWiVg6+mg+QH0zJB2Dt0tZUoN2UMPUkTCPvG0XaPpgJ5U2hJ
+fUPzrVn0XfEvV8cv6Br7yYwmkoU7jk/0z6G3VsbGb1tAF/qulBR+Q1PVT2J2
+GdATw/HObSSHnmhlDhnRy053AmxW0JfMswIqSXZ7k0f3XCXld/NRhn5HH1UM
+MUdJ5uvVmqtraKuCV1QDyYNfWbHidfQfzyVPCg==
+       "]]},
+     Annotation[#, "Charting`Private`Tag$17487#4"]& ]}, {{}, {{
+      {RGBColor[0.368417, 0.506779, 0.709798], AbsolutePointSize[6], 
+       AbsoluteThickness[1.6], GeometricTransformationBox[InsetBox[
+         GraphicsBox[
+          {GrayLevel[0], AbsolutePointSize[6], Thickness[0.25], 
+           LineBox[{{0, 1}, {1, 0}}], LineBox[{{0, 0}, {1, 1}}]},
+          ImageSize->{8., Automatic}], {0., 0.}], {{{-21452.13649067592, 
+        0.}}, {{-12566.370614359146`, 0.}}, {{-6283.185307179587, 0.}}, {{0., 
+        0.}}}]}, 
+      {RGBColor[0.880722, 0.611041, 0.142051], AbsolutePointSize[6], 
+       AbsoluteThickness[1.6], GeometricTransformationBox[InsetBox[
+         GraphicsBox[DiskBox[{0, 0}],
+          ImageSize->{7, Automatic}], {0., 0.}], {{{-25519.687948967334`, 
+        0.}}, {{-6306.070359219659, -6241.375707774346}}, \
+{{-6306.070359219659, 6241.375707774346}}, {{-2169.86427320142, 0.}}}]}, 
+      {RGBColor[0.560181, 0.691569, 0.194885], AbsolutePointSize[6], 
+       AbsoluteThickness[1.6], GeometricTransformationBox[InsetBox[
+         GraphicsBox[CircleBox[{0, 0}],
+          ImageSize->{7, Automatic}], {0., 0.}], {{{-3680.60473804244, 
+        0.}}, {{-3680.60473804244, 0.}}}]}, {}}, {
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-21452.13649067592, 0.}]},
+        RowBox[{"k", "\[Equal]", "0"}]],
+       Annotation[#, $CellContext`k == 0, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-12566.370614359146`, 0.}]},
+        RowBox[{"k", "\[Equal]", "0"}]],
+       Annotation[#, $CellContext`k == 0, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-6283.185307179587, 0.}]},
+        RowBox[{"k", "\[Equal]", "0"}]],
+       Annotation[#, $CellContext`k == 0, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{0., 0.}]},
+        RowBox[{"k", "\[Equal]", "0"}]],
+       Annotation[#, $CellContext`k == 0, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-25519.687948967334`, 0.}]},
+        RowBox[{"k", "\[Equal]", "0.75`"}]],
+       Annotation[#, $CellContext`k == 0.75, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-6306.070359219659, -6241.375707774346}]},
+        RowBox[{"k", "\[Equal]", "0.75`"}]],
+       Annotation[#, $CellContext`k == 0.75, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-6306.070359219659, 6241.375707774346}]},
+        RowBox[{"k", "\[Equal]", "0.75`"}]],
+       Annotation[#, $CellContext`k == 0.75, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-2169.86427320142, 0.}]},
+        RowBox[{"k", "\[Equal]", "0.75`"}]],
+       Annotation[#, $CellContext`k == 0.75, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-3680.60473804244, 0.}]},
+        RowBox[{"k", "\[Equal]", "\[Infinity]"}]],
+       Annotation[#, $CellContext`k == DirectedInfinity[1], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {Opacity[0.], PointBox[{-3680.60473804244, 0.}]},
+        RowBox[{"k", "\[Equal]", "\[Infinity]"}]],
+       Annotation[#, $CellContext`k == DirectedInfinity[1], 
+        "Tooltip"]& ]}}, {}, {}, {{}, {}}}},
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{"ScalingFunctions" -> None},
+  PlotRange->{{-27753.265606757235`, 0.}, {-9150.33751436683, 
+   9150.33751436683}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.02]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.777809605098369*^9, 3.7778096222311583`*^9}, {
+   3.7778097624058084`*^9, 3.777809797982911*^9}, 3.7778099966916804`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    RowBox[{"1.279501833017914`*^40", " ", "k"}], "+", 
+    RowBox[{"3.47633588522311`*^36", " ", "k", " ", "\[FormalS]"}]}], 
+   RowBox[{
+    RowBox[{"1.279501833017914`*^40", " ", "k"}], "+", 
+    RowBox[{"7.45748318972408`*^36", " ", "\[FormalS]"}], "+", 
+    RowBox[{"3.47633588522311`*^36", " ", "k", " ", "\[FormalS]"}], "+", 
+    RowBox[{"2.127976557526264`*^33", " ", 
+     SuperscriptBox["\[FormalS]", "2"]}], "+", 
+    RowBox[{"1.7744153396910973`*^29", " ", 
+     SuperscriptBox["\[FormalS]", "3"]}], "+", 
+    RowBox[{"4.4028308328642453`*^24", " ", 
+     SuperscriptBox["\[FormalS]", "4"]}]}]], "/.", 
+  RowBox[{"\[FormalS]", "\[Rule]", 
+   RowBox[{"(", 
+    RowBox[{"p1", "-", 
+     RowBox[{"\[ImaginaryI]", "*", "p1"}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.7778098319467444`*^9, 3.777809864353934*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"9.047444226675848`*^39", "-", 
+      RowBox[{"2.184246255685499`*^40", " ", "\[ImaginaryI]"}]}], ")"}], " ", 
+    "k"}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1.3724023980985157`*^40", "-", 
+      RowBox[{"3.313272482522789`*^40", " ", "\[ImaginaryI]"}]}], ")"}], "-", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"9.047444226675848`*^39", "-", 
+       RowBox[{"2.184246255685499`*^40", " ", "\[ImaginaryI]"}]}], ")"}], " ",
+      "k"}]}]]}]], "Output",
+ CellChangeTimes->{3.77780986486858*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ec", "=", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Abs", "[", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9.047444226675848`*^39", "-", 
+           RowBox[{"2.184246255685499`*^40", " ", "\[ImaginaryI]"}]}], ")"}], 
+         " ", "k"}], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1.3724023980985157`*^40", "-", 
+           RowBox[{"3.313272482522789`*^40", " ", "\[ImaginaryI]"}]}], ")"}], 
+         "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9.047444226675848`*^39", "-", 
+            RowBox[{"2.184246255685499`*^40", " ", "\[ImaginaryI]"}]}], ")"}],
+           " ", "k"}]}]]}], "]"}], "\[Equal]", "1"}], ",", "k"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.777809884622464*^9, 3.777809918700556*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ifun",
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"",2,32,4,23729830134466717591,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.777809919311881*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"k", "\[Rule]", 
+     RowBox[{"0.758447559174814`", "\[VeryThinSpace]", "+", 
+      RowBox[{"1.135096987740603`", " ", "\[ImaginaryI]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", "\[Rule]", 
+     RowBox[{"0.7584475591748151`", "\[VeryThinSpace]", "-", 
+      RowBox[{"0.506778457022644`", " ", "\[ImaginaryI]"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.777809888039452*^9, 3.7778099193509426`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Abs", "[", 
+  RowBox[{"0.758447559174814`", "\[VeryThinSpace]", "+", 
+   RowBox[{"1.135096987740603`", " ", "\[ImaginaryI]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7778102342002335`*^9, 3.77781023560356*^9}}],
+
+Cell[BoxData["1.365169539506366`"], "Output",
+ CellChangeTimes->{3.7778102359951534`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Abs", "[", 
+  RowBox[{"0.7584475591748151`", "\[VeryThinSpace]", "-", 
+   RowBox[{"0.506778457022644`", " ", "\[ImaginaryI]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.77781024340335*^9, 3.777810245097685*^9}}],
+
+Cell[BoxData["0.9121771234362801`"], "Output",
+ CellChangeTimes->{3.777810246082059*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 1007},
@@ -811,40 +1922,97 @@ Notebook[{
 Cell[558, 20, 17914, 299, 278, "Input"],
 Cell[CellGroupData[{
 Cell[18497, 323, 751, 26, 90, "Input"],
-Cell[19251, 351, 838, 22, 68, "Output"]
+Cell[19251, 351, 912, 23, 68, "Output"]
 }, Open  ]],
-Cell[20104, 376, 96, 1, 45, "Input"],
+Cell[20178, 377, 96, 1, 45, "Input"],
 Cell[CellGroupData[{
-Cell[20225, 381, 285, 7, 68, "Input"],
-Cell[20513, 390, 369, 8, 68, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[20919, 403, 249, 5, 45, "Input"],
-Cell[21171, 410, 388, 8, 66, "Output"]
+Cell[20299, 382, 285, 7, 68, "Input"],
+Cell[20587, 391, 439, 9, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21596, 423, 424, 9, 68, "Input"],
-Cell[22023, 434, 3776, 77, 75, "Output"]
+Cell[21063, 405, 249, 5, 45, "Input"],
+Cell[21315, 412, 463, 9, 66, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25836, 516, 273, 5, 68, "Input"],
-Cell[26112, 523, 1449, 42, 81, "Output"]
+Cell[21815, 426, 424, 9, 68, "Input"],
+Cell[22242, 437, 3848, 78, 75, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27598, 570, 346, 10, 45, "Input"],
-Cell[27947, 582, 3401, 73, 75, "Output"]
+Cell[26127, 520, 273, 5, 68, "Input"],
+Cell[26403, 527, 1523, 43, 81, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31385, 660, 295, 8, 68, "Input"],
-Cell[31683, 670, 327, 10, 63, "Output"]
+Cell[27963, 575, 476, 13, 70, "Input"],
+Cell[28442, 590, 3686, 80, 84, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32047, 685, 296, 7, 92, "Input"],
-Cell[32346, 694, 188, 2, 45, "Output"]
+Cell[32165, 675, 672, 18, 70, "Input"],
+Cell[32840, 695, 3524, 75, 92, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32571, 701, 526, 15, 70, "Input"],
-Cell[33100, 718, 3362, 72, 92, "Output"]
+Cell[36401, 775, 328, 6, 68, "Input"],
+Cell[36732, 783, 473, 12, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37242, 800, 271, 7, 68, "Input"],
+Cell[37516, 809, 192, 4, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37745, 818, 271, 7, 68, "Input"],
+Cell[38019, 827, 188, 4, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38244, 836, 202, 4, 68, "Input"],
+Cell[38449, 842, 2820, 60, 66, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41306, 907, 402, 10, 93, "Input"],
+Cell[41711, 919, 3207, 65, 75, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44955, 989, 827, 24, 100, "Input"],
+Cell[45785, 1015, 2997, 61, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48819, 1081, 833, 23, 121, "Input"],
+Cell[49655, 1106, 3177, 66, 72, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52869, 1177, 407, 10, 68, "Input"],
+Cell[53279, 1189, 4543, 96, 83, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57859, 1290, 170, 3, 68, "Input"],
+Cell[58032, 1295, 302, 9, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58371, 1309, 180, 3, 68, "Input"],
+Cell[58554, 1314, 4988, 103, 87, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63579, 1422, 318, 7, 68, "Input"],
+Cell[63900, 1431, 4970, 101, 86, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68907, 1537, 495, 11, 68, "Input"],
+Cell[69405, 1550, 11911, 230, 379, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[81353, 1785, 876, 20, 127, "Input"],
+Cell[82232, 1807, 591, 17, 82, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82860, 1829, 853, 24, 97, "Input"],
+Cell[83716, 1855, 339, 8, 35, "Message"],
+Cell[84058, 1865, 491, 12, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84586, 1882, 236, 4, 68, "Input"],
+Cell[84825, 1888, 89, 1, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84951, 1894, 235, 4, 68, "Input"],
+Cell[85189, 1900, 88, 1, 45, "Output"]
 }, Open  ]]
 }
 ]

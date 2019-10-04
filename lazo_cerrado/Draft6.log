@@ -1,0 +1,27 @@
+Circuit: * C:\Users\Dani\Desktop\cuarto\EE005_CONT\laboratorios\control_sallen_key\lazo_cerrado\Draft6.asc
+
+Laplace(E2): Window=20ms Nfft=32768
+Laplace(E1): Window=1.6027948s Nfft=4096
+.OP point found by inspection.
+Ignoring empty pin current: Ix(u2:in1)
+Ignoring empty pin current: Ix(u2:in2)
+Ignoring empty pin current: Ix(u2:in1)
+Ignoring empty pin current: Ix(u2:in2)
+
+Date: Sun Sep 15 04:12:16 2019
+Total elapsed time: 10.565 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 32864
+traniter = 32864
+tranpoints = 16433
+accept = 16432
+rejected = 1
+matrix size = 7
+fillins = 2
+solver = Normal
+Matrix Compiler1: 214 bytes object code size  0.1/0.0/[0.0]
+Matrix Compiler2: 373 bytes object code size  0.1/0.1/[0.1]
+
